@@ -10,6 +10,8 @@ docker run -it \
 ```
 
 ```
+wget https://github.com/second-state/wasmedge-quickjs/releases/download/v0.5.0-alpha/wasmedge_quickjs.wasm -O ./src/wasmedge_quickjs.wasm
+
 docker run -it \
   -v $(pwd)/src:/src \
   -w /src \
