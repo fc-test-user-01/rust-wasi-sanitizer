@@ -5,6 +5,13 @@ docker build -t sanitizer .
 ```
 docker run -it \
   -v $(pwd)/src:/src \
+  -w /src \
+  sanitizer /bin/bash -c "npm install"
+```
+
+```
+docker run -it \
+  -v $(pwd)/src:/src \
   -w /src/src \
   sanitizer /bin/bash -c "npm run build"
 ```
