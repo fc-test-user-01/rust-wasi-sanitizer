@@ -12,7 +12,7 @@ docker run -it \
 ```
 docker run -it \
   -v $(pwd)/src:/src \
-  -w /src/src \
+  -w /src \
   sanitizer /bin/bash
 
 # https://github.com/second-state/wasmedge-quickjs
